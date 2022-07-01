@@ -7,3 +7,149 @@
 }
 
 /* Write CSS code below */
+.main-content {
+  min-height: 1000px;
+  width: 90%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 300px 700px;
+  position: relative;
+}
+.left-content {
+  padding: 1rem;
+}
+.left-section {
+  grid-column: span 1;
+  background-color: rgb(3, 32, 3);
+  /* padding: 1rem; */
+  color: white;
+}
+
+.profile-image {
+  padding: 0;
+  display: block;
+  margin: auto;
+  border: solid white 5px;
+  border-radius: 30%;
+  width: 60%;
+}
+.name {
+  font-size: 1.2rem;
+  font-weight: 700px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.02px;
+  padding: 0.8rem;
+}
+.designation {
+  font-size: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+}
+.summary {
+  padding-top: 7px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.description {
+  font-size: 0.75rem;
+  text-align: center;
+  padding: 1rem;
+}
+.social-media-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  line-height: 2rem;
+}
+.social-media-icons i {
+  color: white;
+  font-size: 1.5rem;
+}
+.pra {
+  padding-left: 25px;
+}
+.contact {
+  line-height: 1.5rem;
+}
+.contact i {
+  padding-right: 12px;
+  font-size: 1.2rem;
+}
+.skills {
+  font-size: 0.75rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1rem 0.5rem;
+}
+.skill-name {
+  font-size: 0.65rem;
+  font-weight: 0.65rem;
+  text-align: left;
+  padding-bottom: 0.5rem;
+}
+.progress-bar {
+  border: solid white 1px;
+  height: 4px;
+}
+.right-section {
+  grid-column: span 1 / span 1;
+  background-color: rgb(175, 227, 234);
+}
+.right-main-content {
+  padding: 2rem 3rem;
+}
+.right-title {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0.5rem;
+  letter-spacing: 1px;
+}
+.education-detail {
+  display: flex;
+  flex-direction: row;
+  grid-template-columns: 26.5rem 10rem;
+  gap: 0.8rem;
+  box-sizing: border-box;
+}
+.edu,
+.experi {
+  width: 26.5rem;
+  box-sizing: border-box;
+  /* background-color: red; */
+}
+.school,
+.company {
+  width: 10rem;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  /* background-color: antiquewhite; */
+  position: relative;
+}
+.school span,
+.company span {
+  position: relative;
+  top: 1rem;
+}
+.education-content h4,
+.experi h4 {
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0.5rem;
+  letter-spacing: 1px;
+}
+.project-item .project-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 10px 0px;
+}
+
+@media screen and (max-width: 673px) {
+  .main-content {
+    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    flex-direction: column;
+  }
+}
