@@ -92,7 +92,7 @@
 }
 .right-section {
   display: grid;
-  grid-column: span 1 / span 1;
+  grid-column: span 1 / span 2;
   background-color: rgb(238, 238, 230);
 }
 .right-main-content {
