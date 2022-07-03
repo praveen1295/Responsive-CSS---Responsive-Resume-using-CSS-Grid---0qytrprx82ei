@@ -96,6 +96,8 @@
   background-color: rgb(238, 238, 230);
 }
 .right-main-content {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
   padding: 2rem 3rem;
 }
 .right-title {
