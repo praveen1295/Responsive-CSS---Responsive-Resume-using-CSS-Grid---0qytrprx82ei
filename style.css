@@ -12,14 +12,13 @@
   margin: 20px auto;
   display: grid;
   grid-template-columns: 300px 700px;
-  position: relative;
 }
 .left-content {
   padding: 1rem;
 }
 .left-section {
   grid-column: span 1;
-  background-color: rgb(3, 32, 3);
+  background-color: rgb(1, 15, 29);
   /* padding: 1rem; */
   color: white;
 }
@@ -57,14 +56,13 @@
   padding: 1rem;
 }
 .social-media-icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  text-align: center;
   line-height: 2rem;
 }
 .social-media-icons i {
   color: white;
   font-size: 1.5rem;
+  padding: 0 0.8em;
 }
 .pra {
   padding-left: 25px;
@@ -93,8 +91,9 @@
   height: 4px;
 }
 .right-section {
+  display: grid;
   grid-column: span 1 / span 1;
-  background-color: rgb(175, 227, 234);
+  background-color: rgb(238, 238, 230);
 }
 .right-main-content {
   padding: 2rem 3rem;
@@ -107,22 +106,18 @@
   letter-spacing: 1px;
 }
 .education-detail {
-  display: flex;
-  flex-direction: row;
-  grid-template-columns: 26.5rem 10rem;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
   gap: 0.8rem;
-  box-sizing: border-box;
 }
 .edu,
 .experi {
-  width: 26.5rem;
   box-sizing: border-box;
   /* background-color: red; */
 }
 .school,
 .company {
   padding-top: 12px;
-  width: 10rem;
   box-sizing: border-box;
   text-transform: uppercase;
   /* background-color: antiquewhite; */
@@ -149,7 +144,11 @@
 @media screen and (max-width: 673px) {
   .main-content {
     grid-template-columns: repeat(1, 1fr);
-    display: flex;
-    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .main-content {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
